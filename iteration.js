@@ -103,7 +103,9 @@ function convertToBinaryIter(num){
 
 }
 console.log(convertToBinaryIter(124)); //1111100
-
+/*
+best=worst=average case: O(log(n)) - Logarithmic Time
+*/
 /*=================================================================================
 Exercise 7 - Factorial
 Write a recursive program that finds the factorial of a given number. 
@@ -118,7 +120,9 @@ function factorialIterative(number){
  return fact;
 }
 console.log(factorialIterative(5));
-
+/*
+best=worst=average cast: linear O(n) time, the number has to loop up to the input size
+*/
 /*=================================================================================
 Exercise 8 - Fibonacci
 Write a recursive program that prints the fibonacci sequence of a given number. 
@@ -141,7 +145,10 @@ function fibonacciIterative(number){
 }
 
 //print the whole sequence
-
+/*
+best=worst=average cast: linear O(n) time, the number has to loop up to the input size,
+just down to zero from the number
+*/
 
 //******** ES6 makes it a bit easier*****
 function fibonacciIterative2(number){
