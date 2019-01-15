@@ -18,8 +18,8 @@ function areYouHere(arr1, arr2) {
   return counter;
 }
 
-let array1 = [1,6,7,8,40]
-let array2 = [1,2,3,20,11]
+let array1 = [1,1,1,1,1,1]
+let array2 = [2,2,2,2,2,2,2,2,2]
 
 
 console.log(areYouHere(array1, array2))
@@ -27,4 +27,4 @@ console.log(areYouHere(array1, array2))
 // function testing if two arrays contain one of the same elements
 //Polynomial time  0(n^k) = n^2
 //best case = constant time 0(1), 3 steps regardless of input size
-//worst case = polynomial time  0(n^2)
+//worst case = polynomial time  n^2
