@@ -33,6 +33,7 @@ function double_all(arr) {
 let arr = [10,4,5,2,1];
 console.log(double_all(arr));
 
+// O(n) time runs through the entire array for every input size
 /*====================================================================*/
 //Exercise 3: Take a string as input, reverse the string, and return the new
 //string.
