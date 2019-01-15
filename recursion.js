@@ -4,14 +4,16 @@
 // What is the output of each recursive calls
 
 // Counting Sheep
-// function sheep(num) {
-//     if(num === 0) {
-//         return;
-//     }
-//     console.log(`${num} - Another sheep jump over the fence`);
-//     sheep(num -1);
-// }
-// sheep(3);
+function sheep(num) {
+    if(num === 0) {
+        return;
+    }
+    console.log(`${num} - Another sheep jump over the fence`);
+    sheep(num -1);
+}
+sheep(3);
+
+//best=average=worst: Linear Time 0(n) counting down through input
 
 //Array Double
 // function double(arr){
@@ -25,6 +27,7 @@
 // };
 // var arr = [2,3,4];
 // console.log(double(arr));
+//best=average=worst: Linear Time 0(n) counting down through input
 
 // Reverse String
 // function reverse(str) {
@@ -35,6 +38,7 @@
 //     return newChar + reverse(str.slice(0, str.length -1));
 // }
 // console.log(reverse('hello'));
+//best=average=worst: Linear Time 0(n) counting down through input
 
 //nth triangular number
 // function triangular(num) {
@@ -44,6 +48,7 @@
 //     return num + triangular(num - 1)
 // }
 // console.log(triangular(3));
+//best=average=worst: Linear Time 0(n) counting down through input
 
 // String Splitter
 // function split(str, seperator) {
@@ -57,16 +62,18 @@
 // console.log(split('the', ' ')); // will return ['the']
 // console.log(split('the quick brown fox', ' ')) // will return ['the', 'quick', 'brown', 'fox']
 // console.log(split('t', 't')) // will return ['', '']
+//best=average=worst: Linear Time 0(n) counting down through input
 
 // Binary Representation
-// function binary(num) {
-//     if(num <= 0) {
-//         return '';
-//     }
-//     let binaryRep = Math.floor(num%2);
-//     return binary(Math.floor(num/2)) + binaryRep;
-// }
-// console.log(binary(25));
+function binary(num) {
+    if(num <= 0) {
+        return '';
+    }
+    let binaryRep = Math.floor(num%2);
+    return binary(Math.floor(num/2)) + binaryRep;
+}
+console.log(binary(25));
+//Logarithm Time: 0(log(n))
 
 // Factorial
 // function factorial(num) {
@@ -76,6 +83,7 @@
 //     return num * factorial(num - 1);
 // }
 // console.log(factorial(3));
+//best=average=worst: Linear Time 0(n) counting down through input
 
 // Fibonacci
 // function fibonacci(num) {
@@ -85,6 +93,7 @@
 //     return fibonacci(num - 1) + fibonacci(num - 2) 
 // }
 // console.log(fibonacci(7)); // returns 13
+//best=average=worst: Linear Time 0(n) counting down through input
 
 // Anagrams 
 function anagram(word) {
@@ -102,6 +111,7 @@ function anagram(word) {
   return permutations;
 }
 console.log(anagram('four')) // returns ['to', 'ot']
+//Polynomial time O(n^k): nested for-loops
 
 // Animal Hierarchy
 // input => array of objects
@@ -132,7 +142,7 @@ function traverse(animalHierarchy, parent) {
                  .forEach(item => node[item.id] = traverse(animalHierarchy, item.id));
   return node;  
 }
-
+//Polynomial Time: O(n^k)
 
 /*=================================================================================*/
 /*
@@ -219,3 +229,4 @@ for (var key in node) {
   traverseB(node[key], indent + 4);
 }
 }
+//polynomial time O(n^k): nested loops
