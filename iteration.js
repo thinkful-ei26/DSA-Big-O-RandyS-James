@@ -34,6 +34,7 @@ let arr = [10,4,5,2,1];
 console.log(double_all(arr));
 
 // O(n) time runs through the entire array for every input size
+
 /*====================================================================*/
 //Exercise 3: Take a string as input, reverse the string, and return the new
 //string.
@@ -47,6 +48,8 @@ function reverse_tail(str) {
   return accumulator;
 }
 
+//Linear time: 0(n) - runs through the whole string everytime
+
 /*====================================================================*/
 //Exercise 4: Calculates the nth triangular number.
 //Should always return n*(n+1)/2
@@ -57,6 +60,9 @@ function triangle(n) {
   }
   return tot;
 }
+
+//Linear time: 0(n) - runs through every number previous to input
+
 /*====================================================================*/
 //Exercise 5: Split a string based upon a separator (similar to
 //String.prototype.split).
@@ -73,6 +79,11 @@ str = str.slice(idx + sep.length);
   ret.push(str);
   return ret;
 }
+
+//average case: Linear time O(n) if input grows consistently the complexity will grow linearly
+//best case: Linear time 0(n) if input grows consistently the complexity will grow linearly
+
+
 
 /*=================================================================================
 Exercise 6 - Binary Representation
